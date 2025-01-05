@@ -1,4 +1,4 @@
-using System.Collections;
+﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -33,7 +33,9 @@ public class PlatesCounterVisual : MonoBehaviour
         Transform plateVisualTransform = Instantiate(plateVisualPrefab, counterTopPoint);
 
         float plateOffsetY = .1f;
-        plateVisualTransform.localPosition = new Vector3 (0, plateOffsetY*plateVisualGameObjectList.Count, 0);
+        plateVisualTransform.localPosition = new Vector3 (0, plateOffsetY * plateVisualGameObjectList.Count, 0);
+
+
         plateVisualGameObjectList.Add(plateVisualTransform.gameObject);
     }
 

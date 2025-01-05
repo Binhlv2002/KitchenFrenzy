@@ -19,3 +19,4 @@ MonoBehaviour:
   - {fileID: 11400000, guid: 384de14f08585f74fab9071db5726ed9, type: 2}
   - {fileID: 11400000, guid: e2e401cb6b97ae043aec3304986749dd, type: 2}
   recipeName: MEGABurger
+  timeLimit: 120

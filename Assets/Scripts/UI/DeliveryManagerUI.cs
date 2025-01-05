@@ -1,4 +1,4 @@
-using System.Collections;
+﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -32,17 +32,25 @@ public class DeliveryManagerUI : MonoBehaviour
 
     private void UpdateVisual()
     {
-        foreach(Transform child in container)
+     
+        foreach (Transform child in container)
         {
             if (child == recipeTemplate) continue;
             Destroy(child.gameObject);
         }
 
-        foreach(RecipeSO recipeSO in DeliveryManager.Instance.GetWaitingRecipeSOList())
+
+        List<RecipeWithTimer> waitingRecipesWithTimers = DeliveryManager.Instance.GetWaitingRecipesWithTimers();
+
+    
+        foreach (RecipeWithTimer recipeWithTimer in waitingRecipesWithTimers)
         {
             Transform recipeTransform = Instantiate(recipeTemplate, container);
             recipeTransform.gameObject.SetActive(true);
-            recipeTransform.GetComponent<DeliveryManagerSingleUI>().SetRecipeSO(recipeSO);
+
+       
+            recipeTransform.GetComponent<DeliveryManagerSingleUI>().SetRecipeWithTimer(recipeWithTimer);
         }
     }
+
 }

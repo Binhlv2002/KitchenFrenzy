@@ -11,8 +11,6 @@ public class DeliveryResultUI : MonoBehaviour
     [SerializeField] private Image backgroundImage;
     [SerializeField] private Image iconImage;
     [SerializeField] private TextMeshProUGUI messageText;
-    [SerializeField] private Color successColor;
-    [SerializeField] private Color failedColor;
     [SerializeField] private Sprite successSprite;
     [SerializeField] private Sprite failedSprite;
 
@@ -30,21 +28,21 @@ public class DeliveryResultUI : MonoBehaviour
         gameObject.SetActive(false);
     }
 
+  
+
     private void DeliveryManager_OnRecipeFailed(object sender, System.EventArgs e)
     {
         gameObject.SetActive(true);
         animator.SetTrigger(POPUP);
-        backgroundImage.color = failedColor;
         iconImage.sprite = failedSprite;
-        messageText.text = "DELIVERY\nFAILED";
+        messageText.text = "FAILED";
     }
 
     private void DeliveryManager_OnRecipeSuccess(object sender, System.EventArgs e)
     {
         gameObject.SetActive(true);
         animator.SetTrigger(POPUP);
-        backgroundImage.color = successColor;
         iconImage.sprite = successSprite;
-        messageText.text = "DELIVERY\nSUCCESS";
+        messageText.text = "SUCCESS";
     }
 }

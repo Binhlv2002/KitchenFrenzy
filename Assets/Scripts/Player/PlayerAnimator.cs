@@ -1,8 +1,7 @@
-using System.Collections;
-using System.Collections.Generic;
+﻿using Unity.Netcode;
 using UnityEngine;
 
-public class PlayerAnimator : MonoBehaviour
+public class PlayerAnimator : NetworkBehaviour
 {
     private const string IS_WALKING = "IsWalking";
 
@@ -11,12 +10,27 @@ public class PlayerAnimator : MonoBehaviour
 
     private void Awake()
     {
-        animator = GetComponent<Animator>();
-        
+        if (player != null && player.PlayerVisual != null)
+        {
+            animator = player.PlayerVisual.GetAnimator();
+            if (animator == null)
+            {
+                Debug.LogError("Animator không được tìm thấy!");
+            }
+        }
     }
+
 
     private void Update()
     {
-        animator.SetBool(IS_WALKING, player.IsWalking());
+        if (!IsOwner) return;
+
+        if (animator != null)
+        {
+            animator.SetBool(IS_WALKING, player.IsWalking());
+        }
+
+        Debug.Log("IsWalking: " + player.IsWalking());
+        Debug.Log("IsOwner: " + IsOwner);
     }
 }

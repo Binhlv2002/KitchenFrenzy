@@ -1,0 +1,60 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5be51871efa6c3e4eae1703925c8f5ac, type: 3}
+  m_Name: Table1
+  m_EditorClassIdentifier: 
+  m_SharedTableData: {fileID: 11400000, guid: 017cfb7e6b7572444a9ae65eb51dd259, type: 2}
+  m_Tables:
+  - {fileID: 11400000, guid: e838c1e827fee4543abc67db8ba6ff55, type: 2}
+  - {fileID: 11400000, guid: 2dced2c20ce0d774e9ba99e7ed1bc54c, type: 2}
+  m_Extensions:
+  - rid: 1088547843493593113
+  m_Group: String Table
+  references:
+    version: 2
+    RefIds:
+    - rid: 1088547843493593113
+      type: {class: CsvExtension, ns: UnityEditor.Localization.Plugins.CSV, asm: Unity.Localization.Editor}
+      data:
+        m_Collection: {fileID: 11400000}
+        m_ColumnsList:
+        - rid: 1088547843493593114
+        - rid: 1088547843493593115
+        - rid: 1088547843493593116
+        m_ConnectedFile: D:/Language Builder.csv
+    - rid: 1088547843493593114
+      type: {class: KeyIdColumns, ns: UnityEditor.Localization.Plugins.CSV.Columns,
+        asm: Unity.Localization.Editor}
+      data:
+        m_IncludeId: 1
+        m_IncludeSharedComments: 1
+        m_KeyFieldName: Key
+        m_IdFieldName: Id
+        m_CommentFieldName: Shared Comments
+    - rid: 1088547843493593115
+      type: {class: LocaleColumns, ns: UnityEditor.Localization.Plugins.CSV.Columns,
+        asm: Unity.Localization.Editor}
+      data:
+        m_LocaleIdentifier:
+          m_Code: en
+        m_FieldName: English(en)
+        m_CommentFieldName: English(en) Comments
+        m_IncludeComments: 0
+    - rid: 1088547843493593116
+      type: {class: LocaleColumns, ns: UnityEditor.Localization.Plugins.CSV.Columns,
+        asm: Unity.Localization.Editor}
+      data:
+        m_LocaleIdentifier:
+          m_Code: vi
+        m_FieldName: Vietnamese(vi)
+        m_CommentFieldName: Vietnamese(vi) Comments
+        m_IncludeComments: 0

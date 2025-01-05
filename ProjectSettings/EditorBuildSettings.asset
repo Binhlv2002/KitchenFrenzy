@@ -9,9 +9,19 @@ EditorBuildSettings:
     path: Assets/Scenes/MainMenuScene.unity
     guid: d9d680d45288a53468d760a524263b22
   - enabled: 1
+    path: Assets/Scenes/LobbyScene.unity
+    guid: 11beab7f05d602c43aaa70250539d9c9
+  - enabled: 1
     path: Assets/Scenes/GameScene.unity
     guid: 99c9720ab356a0642a771bea13969a05
   - enabled: 1
     path: Assets/Scenes/LoadingScene.unity
     guid: f26da79b07a60f444872052509661446
-  m_configObjects: {}
+  - enabled: 1
+    path: Assets/Scenes/CharacterSelectScene.unity
+    guid: bf628974f2cfb274ab0fbb9c522e71af
+  m_configObjects:
+    com.unity.addressableassets: {fileID: 11400000, guid: fffc992cb12fc1747963ca03e40a8484,
+      type: 2}
+    com.unity.localization.settings: {fileID: 11400000, guid: 402fef3470eee934b81f5cdd025f6040,
+      type: 2}
