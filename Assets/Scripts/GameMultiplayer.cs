@@ -1,4 +1,4 @@
-using System;
+﻿using System;
 using System.Collections;
 using System.Collections.Generic;
 using Unity.Netcode;
@@ -33,17 +33,21 @@ public class GameMultiplayer : NetworkBehaviour
         DontDestroyOnLoad(gameObject);
         playerName = PlayerPrefs.GetString(PLAYER_PREFS_PLAYER_NAME_MULTIPLAYER, "PlayerName" + UnityEngine.Random.Range(100,1000));
         playerDataNetworkList = new NetworkList<PlayerData>();
-        playerDataNetworkList.OnListChanged += PlayerDataNetworkList_OnListChanged; ;
-    }
+        playerDataNetworkList.OnListChanged += PlayerDataNetworkList_OnListChanged;
 
-    private void Start()
-    {
-        if (playMultiplayer)
+        if (!playMultiplayer)
         {
             StartHost();
             Loader.LoadNetwork(Loader.Scene.GameScene);
         }
     }
+
+    private void Start()
+    {
+       
+    }
+
+
     public string GetPlayerName()
     {
         return playerName;

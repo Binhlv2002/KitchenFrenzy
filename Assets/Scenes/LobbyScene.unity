@@ -4423,79 +4423,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1291198974}
   m_CullTransparentMesh: 1
---- !u!1 &1308313604
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1308313607}
-  - component: {fileID: 1308313606}
-  - component: {fileID: 1308313608}
-  m_Layer: 0
-  m_Name: GameMultiplayer
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!114 &1308313606
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1308313604}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9368a128388d54c438a87d5b0822c772, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  kitchenObjectListSO: {fileID: 11400000, guid: ebd9cd6094c97e645bb4bd2ca0eb3a60,
-    type: 2}
-  playerCharacterList:
-  - {fileID: 865786437822749721, guid: 19c464c42c7fcca44b57d4ee50fdcb32, type: 3}
-  - {fileID: 3353463480233143433, guid: 0ece6283d432fd545b369543070b2aed, type: 3}
-  - {fileID: 7745866707118971718, guid: ee427194f0b41ca439eba1163d47bc11, type: 3}
-  - {fileID: 1527299123273147516, guid: 09013b67c268012469e4071e6790b310, type: 3}
-  playerCharacterSprites:
-  - {fileID: 21300000, guid: 588ab5360e0cac74584e73b40daff675, type: 3}
-  - {fileID: 21300000, guid: d0012c56f4a72fc4db6b748fe8e8cec3, type: 3}
-  - {fileID: 21300000, guid: efb40c945319a9e4094d53c243e12eff, type: 3}
-  - {fileID: 21300000, guid: c5e54c85dd663b24ab7e1d0dc2d903f5, type: 3}
---- !u!4 &1308313607
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1308313604}
-  serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1308313608
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1308313604}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d5a57f767e5e46a458fc5d3c628d0cbb, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  GlobalObjectIdHash: 3613433689
-  AlwaysReplicateAsRoot: 0
-  DontDestroyWithOwner: 0
-  AutoObjectParentSync: 1
 --- !u!1 &1346576178
 GameObject:
   m_ObjectHideFlags: 0
@@ -6691,6 +6618,79 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   createGameButton: {fileID: 1346576180}
   joinGameButton: {fileID: 771814918}
+--- !u!1 &1827199713697813785
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 5279977839577788315}
+  - component: {fileID: 5751748416162648801}
+  - component: {fileID: 8147802140903662916}
+  m_Layer: 0
+  m_Name: GameMultiplayer
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &5279977839577788315
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1827199713697813785}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &5751748416162648801
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1827199713697813785}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9368a128388d54c438a87d5b0822c772, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  kitchenObjectListSO: {fileID: 11400000, guid: ebd9cd6094c97e645bb4bd2ca0eb3a60,
+    type: 2}
+  playerCharacterList:
+  - {fileID: 865786437822749721, guid: 19c464c42c7fcca44b57d4ee50fdcb32, type: 3}
+  - {fileID: 3353463480233143433, guid: 0ece6283d432fd545b369543070b2aed, type: 3}
+  - {fileID: 7745866707118971718, guid: ee427194f0b41ca439eba1163d47bc11, type: 3}
+  - {fileID: 1527299123273147516, guid: 09013b67c268012469e4071e6790b310, type: 3}
+  playerCharacterSprites:
+  - {fileID: 21300000, guid: 588ab5360e0cac74584e73b40daff675, type: 3}
+  - {fileID: 21300000, guid: d0012c56f4a72fc4db6b748fe8e8cec3, type: 3}
+  - {fileID: 21300000, guid: efb40c945319a9e4094d53c243e12eff, type: 3}
+  - {fileID: 21300000, guid: c5e54c85dd663b24ab7e1d0dc2d903f5, type: 3}
+--- !u!114 &8147802140903662916
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1827199713697813785}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d5a57f767e5e46a458fc5d3c628d0cbb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  GlobalObjectIdHash: 4239180538
+  AlwaysReplicateAsRoot: 0
+  DontDestroyWithOwner: 0
+  AutoObjectParentSync: 1
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
@@ -6700,5 +6700,5 @@ SceneRoots:
   - {fileID: 192517443}
   - {fileID: 1285471859}
   - {fileID: 852351703}
-  - {fileID: 1308313607}
   - {fileID: 390263434}
+  - {fileID: 5279977839577788315}

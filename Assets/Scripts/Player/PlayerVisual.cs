@@ -21,7 +21,7 @@ public class PlayerVisual : MonoBehaviour
     {
         if (currentCharacter != null)
         {
-            return currentCharacter.GetComponent<Animator>();
+            return currentCharacter.GetComponentInChildren<Animator>();
         }
         return null;
     }

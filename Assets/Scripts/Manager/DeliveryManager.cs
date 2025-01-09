@@ -119,7 +119,7 @@ public class DeliveryManager : NetworkBehaviour
                 if (plateContentsMatchesRecipe)
                 {
                     DeliverCorrectRecipeServerRpc(i);
-                    return; // Thêm lệnh return để không gọi DeliverIncorrectRecipeServerRpc nếu đã tìm thấy công thức đúng
+                    return;
                 }
             }
         }

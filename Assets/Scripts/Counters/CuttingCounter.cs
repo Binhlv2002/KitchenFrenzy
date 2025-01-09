@@ -14,6 +14,7 @@ public class CuttingCounter : BaseCounter,IHasProgress
     }
 
     public event EventHandler<IHasProgress.OnProgressChangedEventArgs> OnProgressChanged;
+
     public class OnProgressChangedEventArgs : EventArgs
     {
         public float progressNormalized;
@@ -49,7 +50,7 @@ public class CuttingCounter : BaseCounter,IHasProgress
         }
         else
         {
-            // Has kitchen obj here
+            // Has kitchen obj here                                                                 
             if (player.HasKitchenObject())
             {
                 // player carrying sth

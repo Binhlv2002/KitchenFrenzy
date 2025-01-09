@@ -15,15 +15,17 @@ public class MainMenuUI : MonoBehaviour
 
     private void Awake()
     {
-        playMultiplayerButton.onClick.AddListener(() =>
-        {
-            GameMultiplayer.playMultiplayer = true;
-            Loader.Load(Loader.Scene.LobbyScene);
-        });
-
         playSingleplayerButton.onClick.AddListener(() =>
         {
             GameMultiplayer.playMultiplayer = false;
+            Loader.Load(Loader.Scene.LobbyScene);
+
+
+        });
+
+        playMultiplayerButton.onClick.AddListener(() =>
+        {
+            GameMultiplayer.playMultiplayer = true;
             Loader.Load(Loader.Scene.LobbyScene);
         });
 
@@ -33,6 +35,7 @@ public class MainMenuUI : MonoBehaviour
 
         Time.timeScale = 1f;
     }
+
 
     private void Start()
     {

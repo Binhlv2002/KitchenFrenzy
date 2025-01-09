@@ -8,7 +8,7 @@ public class PlayerAnimator : NetworkBehaviour
     [SerializeField] private Player player;
     private Animator animator;
 
-    private void Awake()
+    private void Start()
     {
         if (player != null && player.PlayerVisual != null)
         {
